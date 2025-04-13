@@ -155,6 +155,7 @@
             this.clearButton.Size = new System.Drawing.Size(150, 36);
             this.clearButton.TabIndex = 7;
             this.clearButton.Text = "CLEAR";
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // guna2BorderlessForm1
             // 

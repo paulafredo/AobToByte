@@ -42,7 +42,13 @@ namespace AobToByte
             }
             resultsBox.Text = result;
 
-        }         
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            inputBox.Clear();
+            resultsBox.Clear();
+        }
     }
 }
 
