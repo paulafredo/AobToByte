@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.inputBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.resultBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -200,6 +201,7 @@
             this.guna2ContainerControl1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.guna2ContainerControl1.Controls.Add(this.label5);
             this.guna2ContainerControl1.Controls.Add(this.label1);
+            this.guna2ContainerControl1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2ContainerControl1.Location = new System.Drawing.Point(0, 432);
             this.guna2ContainerControl1.Name = "guna2ContainerControl1";
             this.guna2ContainerControl1.Size = new System.Drawing.Size(450, 80);
@@ -355,9 +357,9 @@
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.inputBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.ShowIcon = false;
-            this.Text = "AOB/Byte Converter";
+            this.Text = "AobToByte";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.topbar.ResumeLayout(false);
             this.topbar.PerformLayout();
