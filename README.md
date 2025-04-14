@@ -21,7 +21,7 @@ Advanced conversion tool for hexadecimal signatures (AOB) and byte arrays, speci
 
 ## 📥 Installation
 
-1. Download the latest release from [Releases](https://github.com/paulafredo/AobToByte/tags)
+1. Download the latest release from [Releases](https://github.com/paulafredo/AobToByte/releases)
 2. Extract the ZIP archive
 3. Run `AobToByte.exe`
 
