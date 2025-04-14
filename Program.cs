@@ -16,7 +16,9 @@ namespace AobToByte
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AobToByte());
+            //Application.Run(new AobToByte());
+            Application.Run(new Form2());
+
         }
     }
 }
