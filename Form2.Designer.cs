@@ -63,6 +63,7 @@
             // 
             // inputBox
             // 
+            this.inputBox.BackColor = System.Drawing.Color.Transparent;
             this.inputBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.inputBox.BorderRadius = 5;
             this.inputBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -78,12 +79,13 @@
             this.inputBox.Name = "inputBox";
             this.inputBox.PlaceholderText = "75 09 0E 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00";
             this.inputBox.SelectedText = "";
-            this.inputBox.Size = new System.Drawing.Size(317, 37);
+            this.inputBox.Size = new System.Drawing.Size(355, 37);
             this.inputBox.TabIndex = 3;
             this.inputBox.TextChanged += new System.EventHandler(this.inputBox_TextChanged);
             // 
             // resultBox
             // 
+            this.resultBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.resultBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(93)))), ((int)(((byte)(213)))));
             this.resultBox.BorderRadius = 5;
             this.resultBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
@@ -114,7 +116,7 @@
             this.ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBox.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox.ForeColor = System.Drawing.Color.Black;
             this.ComboBox.ItemHeight = 30;
             this.ComboBox.Items.AddRange(new object[] {
@@ -227,38 +229,38 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.label1.Location = new System.Drawing.Point(146, 10);
+            this.label1.Location = new System.Drawing.Point(155, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 13);
+            this.label1.Size = new System.Drawing.Size(140, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "© 2025 AOB Convertor – v1.0.0";
+            this.label1.Text = "© 2025 AobToByte – v1.0.2";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 165);
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(22, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 16);
+            this.label4.Size = new System.Drawing.Size(107, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Conversion type";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(93)))), ((int)(((byte)(213)))));
             this.label6.Location = new System.Drawing.Point(34, 277);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 24);
+            this.label6.Size = new System.Drawing.Size(64, 23);
             this.label6.TabIndex = 12;
             this.label6.Text = "Result";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(35, 106);
+            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(22, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 16);
             this.label7.TabIndex = 14;
@@ -267,13 +269,15 @@
             // status
             // 
             this.status.AutoSize = true;
-            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.status.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
             this.status.ForeColor = System.Drawing.Color.Black;
             this.status.Location = new System.Drawing.Point(35, 398);
             this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(26, 15);
+            this.status.Size = new System.Drawing.Size(32, 16);
             this.status.TabIndex = 17;
             this.status.Text = "N/A";
+            this.status.Visible = false;
+            this.status.Click += new System.EventHandler(this.status_Click);
             // 
             // clearButton
             // 
@@ -290,11 +294,10 @@
             this.clearButton.Image = global::AobToByte.Properties.Resources.clear;
             this.clearButton.ImageOffset = new System.Drawing.Point(0, 1);
             this.clearButton.ImageSize = new System.Drawing.Size(35, 35);
-            this.clearButton.Location = new System.Drawing.Point(348, 125);
+            this.clearButton.Location = new System.Drawing.Point(386, 125);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(77, 37);
+            this.clearButton.Size = new System.Drawing.Size(39, 37);
             this.clearButton.TabIndex = 15;
-            this.clearButton.Text = "Clear";
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // copyButton
@@ -310,12 +313,11 @@
             this.copyButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.copyButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(93)))), ((int)(((byte)(213)))));
             this.copyButton.Image = global::AobToByte.Properties.Resources.copy;
-            this.copyButton.ImageOffset = new System.Drawing.Point(0, 1);
-            this.copyButton.Location = new System.Drawing.Point(354, 271);
+            this.copyButton.ImageSize = new System.Drawing.Size(30, 30);
+            this.copyButton.Location = new System.Drawing.Point(386, 263);
             this.copyButton.Name = "copyButton";
-            this.copyButton.Size = new System.Drawing.Size(71, 30);
+            this.copyButton.Size = new System.Drawing.Size(39, 37);
             this.copyButton.TabIndex = 13;
-            this.copyButton.Text = "Copy";
             this.copyButton.Click += new System.EventHandler(this.copyButton_Click);
             // 
             // convertButton
@@ -330,10 +332,10 @@
             this.convertButton.ForeColor = System.Drawing.Color.White;
             this.convertButton.Image = global::AobToByte.Properties.Resources.convert;
             this.convertButton.ImageOffset = new System.Drawing.Point(0, 1);
-            this.convertButton.Location = new System.Drawing.Point(101, 226);
+            this.convertButton.Location = new System.Drawing.Point(124, 232);
             this.convertButton.Name = "convertButton";
             this.convertButton.PressedColor = System.Drawing.Color.Transparent;
-            this.convertButton.Size = new System.Drawing.Size(248, 36);
+            this.convertButton.Size = new System.Drawing.Size(200, 36);
             this.convertButton.TabIndex = 6;
             this.convertButton.Text = "Convert";
             this.convertButton.Click += new System.EventHandler(this.convertButton_Click);
@@ -342,7 +344,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(450, 500);
             this.Controls.Add(this.status);
             this.Controls.Add(this.clearButton);
