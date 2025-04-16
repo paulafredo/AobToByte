@@ -1,7 +1,7 @@
 # 🔍 AOB/Byte Converter
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/paulafredo/AobToByte/releases)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue)](https://github.com/paulafredo/AobToByte/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)](https://www.microsoft.com/windows)
 [![Size](https://img.shields.io/badge/size-1MB-green)](https://github.com/paulafredo/AobToByte/releases)
 
